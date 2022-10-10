@@ -1,0 +1,28 @@
+import java.util.Arrays;
+
+public class Block {
+    private int previousHAsh;
+    private String[] transactions;
+    private int blockHash;
+    
+    public block(int previousHash, string [] transaction){
+        this.previousHash = previousHash;
+        this.transaction = transaction;
+
+        object[] contens = {Arrays.hashCode(transactions), previousHash};
+        this.blockHash = arrays.hashCode(contens);
+        
+
+    }
+    public int getPreviousHash() {
+        return previousHash;
+
+    }
+    public String[] getTransaction(){
+        return transaction;
+
+    }
+    public int getBlockHash() {
+        return blockHash;
+    }
+}
